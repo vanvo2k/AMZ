@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Form_navigate {
+            width: 680px;
+            height: 252px;
+            background: rgb(77, 77, 77);
+            text-align: center;
+            border-radius: 7px;
+            position: absolute;
+            z-index: 1;
+            left:24%;
+            top: 7%;
+            box-shadow: 0 0 25px 1px yellow;
+            animation: vole 0.7s;
+        }
+        @keyframes vole{
+            0%{
+                top: -50%;
+            }
+            100%{
+                top: 7%;
+            }
+        }
+
+        h1 {
+            height: 40px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            margin-top: -10px;
+        }
+
+        button {
+            
+            user-select: none;
+            cursor: pointer;
+            background-color: #4CAF50;
+            /* border-color: #4CAF50; */
+            font-size: 16px;
+            border-radius: 6px;
+            color: #fff;
+            border: none;
+            height: 38px;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: #47974a;
+        }
+
+        .display_web {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            height: 100%;
+            background: #e1e1e160;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='Form_navigate'>
+        <h1></h1>
+        <h3>Upgrade today with just $99 for unlimited access</h3>
+        <p>Get unlimited access to all Advanced feature exclusively for PRO package.</p>
+        <a href="https://localhost:3000/pricing?plan=pro">
+            <button>Get PRO</button>
+        </a>
+    </div>
+    <div class="display_web"></div>
+</body>
+
+</html>
